@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Configure</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <table width="100%" cellpadding="0" cellspacing="0" bgcolor="white" border="0">
+                <tbody>
+                    <tr>
+                        <td valign="middle">
+                            <table width="100%" cellpadding="0" cellspacing="0" bgcolor="white" border="0" height="50">
+                                <tr valign="middle">
+                                    <td width="100%" valign="middle">
+                                        <p class="TITLE">&nbsp;Configure</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="1" bgcolor="#00bfff"><img height="0" src="pixil.gif" width="160" border="0"></td>
+                    </tr>
+                    <tr>
+                        <td height="10" bgcolor="white">
+                            <table class="body" width="100%" height="100%" cellspacing="4" cellpadding="20">
+                                <tbody>
+                                    <tr height="100%" valign="top">
+                                        <td width="100%">
+                                        <table>
+                                            <tr width="650" valign="top">
+                                                <td width="650">
+                                                    <p><Center><img src="AppLogo.gif"></Center><BR><HR><BR></p>
+<!-- ---------------------------------------------------(BEGIN CONTENT) --------------------------------------------------- -->
+<P>
+<font size="1">RWanIP Configuration Dialog</font><BR>
+<Img Src="Config Dialog.gif"><BR>
+</P>
+
+<P>
+<B>Overview:</B>
+<BlockQuote>
+To configure RWanIP, you will either need to open the configuration utility from the installed start menu group. Also, if the application is running you can also right click on the installed "tray icon" and select configure from the popup menu.
+You can modify all of the application functionality from this configuration dialog, such as connection interval, FTP server (if required) and local file name.
+</BlockQuote>
+</P>
+
+<P><HR></P>
+
+<P>
+<B>"IP File" Section:</B>
+<BlockQuote>
+    The IP file section of the configuration dialog allows you to specify:<BR>
+    <ul>
+        <li>Obtain WAN IP from
+            <ul>
+                <li><font class="small">In order to discover what your external WAN IP address is, RWanIP must make a request to an external source to inform it of your IP address. This is where you can tell RWanIP to retrieve your IP from.</font></li>
+            </ul>
+        </li>
+        <li>Save IP file location
+            <ul>
+                <li><font class="small">When RWanIP makes the external request to retrieve your IP information, the server is going to return an HTML or XML file. This returned file will be downloaded and stored in this location.</font></li>
+            </ul>
+        </li>
+        <li>Update Interval
+            <ul>
+                <li><font class="small">You can configure to check for IP changes at an interval between 10 and 15,000 minutes.</font></li>
+            </ul>
+        </li>
+    </ul>
+</BlockQuote>
+</P>
+
+<P><HR></P>
+
+<P>
+<B>"FTP Upload" Section:</B>
+<BlockQuote>
+    You can configure RWanIP to upload your IP information to an FTP server.
+        This was developed to allow you to be able to grab your current home
+        or office IP address from a known FTP server when you are offsite.<BR><BR>
+    <B>Note:</B> This has proven especially useful for companies that have many
+        customers who they support remotely, as they can install RWanIP and
+        consolidate all of their customers IP addresses into one FTP location.<BR>
+
+    <ul>
+        <li>Server
+            <ul>
+                <li><font class="small">This should be set to the host name or IP address of an FTP server of which you have write privileges.</font></li>
+            </ul>
+        </li>
+        <li>Remote Path & Filename
+            <ul>
+                <li><font class="small">This should be set to the file name that you wish to save the IP information to on the FTP server, such as "MyCustomer.html" (without quotes). You can also specify a remote path such as "/Customers/MyCustomer.html" (without quotes) to put the file in a specific directory/folder.</font></li>
+            </ul>
+        </li>
+        <li>Username
+            <ul>
+                <li><font class="small">The FTP account username. This is used to login to the FTP server.</font></li>
+            </ul>
+        </li>
+        <li>Password
+            <ul>
+                <li><font class="small">The FTP account password. This is used to login to the FTP server.</font></li>
+                <li><font class="small"><B>Security Note:</B> This password is stored encrypted in binary format within the registry. While it would be very difficult to obtain the IP from the registry due to encryption, it is still quite easy to grab the password from the TCP/IP traffic in the FTP login process. This is where a very good FTP server security scheme comes in handy.</font></li>
+            </ul>
+        </li>
+        <li>Use Passive FTP Transfer?
+            <ul>
+                <li><font class="small">Passive FTP is a more secure form of data transfer in which the flow of data is set up and initiated by the FTP client (RWanIP) rather than by the FTP server.</font></li>
+                <li><font class="small">When unchecked, RWanIP will use an Active Mode FTP transfer.</font></li>
+                <li><font class="small">If you are having trouble uploading to the FTP server, try un-checking this box.</font></li>
+            </ul>
+        </li>
+        <li>Upload IP file to FTP Server?
+            <ul>
+                <li><font class="small">This check box simply enables / disables the FTP upload process.</font></li>
+            </ul>
+        </li>
+    </ul>
+</BlockQuote>
+</P>
+
+<P><HR></P>
+
+<P>
+<B>"Statistics" Section:</B>
+<BlockQuote>
+    The Statistics section of the configuration dialog shows you some of the connection statistics as well as the basics connection status.<BR>
+     <ul>
+        <li>Last update
+            <ul>
+                <li><font class="small">This is the local time of the last IP check (and FTP upload if applicable).</font></li>
+            </ul>
+        </li>
+        <li>Last IP address
+            <ul>
+                <li><font class="small">This is the last IP address known to RWanIP at the time of the last successful update.</font></li>
+            </ul>
+        </li>
+        <li>Last Status
+            <ul>
+                <li><font class="small">This is the status of the last attempt to check your IP address.</font></li>
+            </ul>
+        </li>
+    </ul>
+</BlockQuote>
+</P>
+
+<!-- ----------------------------------------------------(END CONTENT) ---------------------------------------------------- -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="1" bgcolor="#00bfff"><img height="0" src="pixil.gif" width="160" border="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="bottom" cellspacing="0" cellpadding="5" width="100%" border="0" height="30" bgcolor="white">
+                <tbody>
+                    <tr bgcolor="white">
+                        <td>Copyright &copy; 2007 NetworkDLS. All rights reserved.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </body>
+</html>
