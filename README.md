@@ -1,7 +1,7 @@
 # RWanIP
 RWanIP will poll your external IP address to make it easily available to you. Can also upload the obtained IP information to an FTP server.
 
-🗃️ Keep in kind that this is a legacy utility, originally designed for Windows 95/98 and is archived here for acedemic and historical purposes.
+🗃️ Keep in kind that this is a legacy utility, originally designed for Windows 95/98 and 2000 and is archived here for acedemic and historical purposes.
 
 ![RWanIP - Config Dialog](https://github.com/user-attachments/assets/921f2099-235b-4768-a1cd-3c485f9e6506)
 
